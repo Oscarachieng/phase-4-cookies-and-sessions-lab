@@ -6,6 +6,8 @@ class ArticlesController < ApplicationController
     render json: articles, each_serializer: ArticleListSerializer
   end
 
+  
+
   def show
     article = Article.find(params[:id])
     render json: article
